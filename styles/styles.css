@@ -172,6 +172,7 @@ h2 {
 
 .btn-primary-tech:hover {
   background: #0052cc;
+  color: white !important;
   box-shadow: 0 0 20px var(--primary-glow);
   transform: translateY(-2px);
 }
