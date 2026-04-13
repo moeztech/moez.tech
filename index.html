@@ -1,88 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Moez Tech | Innovating the Future with AI and Mobile Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Berlin-based tech company specializing in mobile app development, AI technologies, and cloud solutions. Creators of Noor-e-Istikhara.">
-    <meta name="keywords" content="Mobile App Development, AI, Artificial Intelligence, Berlin Tech, Istikhara App, Software Development, Cloud Solutions">
+    <meta name="description"
+        content="Berlin-based tech company specializing in mobile app development, AI technologies, and cloud solutions. Creators of Noor-e-Istikhara.">
+    <meta name="keywords"
+        content="Mobile App Development, AI, Artificial Intelligence, Berlin Tech, Istikhara App, Software Development, Cloud Solutions">
     <meta name="author" content="Moez Tech">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://moez.tech">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Moez Tech",
+      "url": "https://moez.tech",
+      "logo": "https://moez.tech/images/favicon.svg",
+      "description": "Berlin-based tech company specializing in mobile app development, AI technologies, and cloud solutions.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@moez.tech",
+        "contactType": "customer support"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Noor-e-Istikhara",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "LifestyleApplication, ReligiousApplication",
+      "description": "A comprehensive Islamic Istikhara application helping users seek divine guidance through the Quran.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://moez.tech/">
     <meta property="og:title" content="Moez Tech | Innovating the Future with AI and Mobile Solutions">
-    <meta property="og:description" content="Berlin-based tech company specializing in mobile app development, AI technologies, and cloud solutions. Creators of Noor-e-Istikhara.">
+    <meta property="og:description"
+        content="Berlin-based tech company specializing in mobile app development, AI technologies, and cloud solutions. Creators of Noor-e-Istikhara.">
     <meta property="og:image" content="https://moez.tech/images/noor-e-istikhara.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://moez.tech/">
     <meta property="twitter:title" content="Moez Tech | Innovating the Future with AI and Mobile Solutions">
-    <meta property="twitter:description" content="Berlin-based tech company specializing in mobile app development, AI technologies, and cloud solutions. Creators of Noor-e-Istikhara.">
+    <meta property="twitter:description"
+        content="Berlin-based tech company specializing in mobile app development, AI technologies, and cloud solutions. Creators of Noor-e-Istikhara.">
     <meta property="twitter:image" content="https://moez.tech/images/noor-e-istikhara.png">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS (Grid/Utility only) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Mo<span class="logo-pipe">|</span>eZ</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#product">Product</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/moeztech" target="_blank">GitHub</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="brand-logo" href="#">Mo<span class="logo-pipe"></span>eZ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#product">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/moeztech"
+                            target="_blank">GitHub</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero d-flex align-items-center">
-        <div class="container text-center">
+    <section class="hero">
+        <div class="container" data-reveal>
             <h1>Innovating the Future with AI and Mobile Solutions</h1>
-            <p class="lead">Berlin-based company specializing in mobile app development and AI technologies.</p>
-            <a href="#services" class="btn btn-primary btn-lg">Our Services</a>
+            <p>Berlin-based company specializing in mobile app development and AI technologies that empower people
+                globally.</p>
+            <a href="#services" class="btn-premium btn-primary-tech">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0" data-reveal>
+                    <h2 class="text-left mb-4">Crafting the Future in Berlin</h2>
+                    <p class="text-muted text-left mb-4">Founded in the heart of Berlin, Moez Tech is an innovative technology company driven by the belief that software can bridge cultures and transform lives. We specialize in building next-generation mobile applications and infusing them with powerful AI and cloud-native backends.</p>
+                    <p class="text-muted text-left">Our mission is simple: deliver premium, globally accessible software products with uncompromising quality and beautiful aesthetics.</p>
+                </div>
+                <div class="col-md-6" data-reveal>
+                    <div class="glass-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-rocket fa-2x text-primary mr-3"></i>
+                            <h4 class="mb-0">Innovation First</h4>
+                        </div>
+                        <p class="text-muted mb-4">We iterate rapidly and leverage the latest tools to stay ahead of the curve.</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-globe fa-2x text-secondary mr-3"></i>
+                            <h4 class="mb-0">Global Mindset</h4>
+                        </div>
+                        <p class="text-muted mb-0">Our products support multiple languages natively and respect cultural contexts.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services py-5">
+    <section id="services" class="services">
         <div class="container">
-            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="text-center mb-5" data-reveal>
+                <h2>Core Excellence</h2>
+                <p class="text-muted max-width-600 mx-auto">We provide end-to-end technical solutions designed to scale with your ambition. Explore our primary domains of expertise below.</p>
+            </div>
             <div class="row">
-                <!-- Service 1 -->
-                <div class="col-md-4 text-center">
-                    <div class="service-box">
-                        <i class="icon fas fa-mobile-alt fa-3x mb-3"></i>
+                <!-- Mobile Development -->
+                <div class="col-md-4 mb-4" data-reveal>
+                    <div class="glass-card h-100">
+                        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
                         <h4>Mobile App Development</h4>
-                        <p>Creating user-friendly mobile applications to engage your customers on the go.</p>
+                        <p class="text-muted mb-3">High-performance Native and Cross-platform applications tailored to modern user experiences.</p>
+                        <ul class="list-unstyled text-muted small">
+                            <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> React Native & Flutter</li>
+                            <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> iOS & Android Native</li>
+                            <li><i class="fas fa-check text-success mr-2"></i> Premium UI/UX Design</li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Service 2 -->
-                <div class="col-md-4 text-center">
-                    <div class="service-box">
-                        <i class="icon fas fa-code fa-3x mb-3"></i>
-                        <h4>Software Development</h4>
-                        <p>Building scalable and robust software applications tailored to your business requirements.</p>
+                <!-- Software Engineering -->
+                <div class="col-md-4 mb-4" data-reveal>
+                    <div class="glass-card h-100">
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <h4>Software Engineering</h4>
+                        <p class="text-muted mb-3">Scalable microservices and robust backend architectures designed for massive scale.</p>
+                        <ul class="list-unstyled text-muted small">
+                            <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> Golang & Node.js</li>
+                            <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> System Architecture</li>
+                            <li><i class="fas fa-check text-success mr-2"></i> API Development</li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Service 3 -->
-                <div class="col-md-4 text-center">
-                    <div class="service-box">
-                        <i class="icon fas fa-cloud fa-3x mb-3"></i>
-                        <h4>Cloud Solutions</h4>
-                        <p>Offering reliable cloud services to enhance your business operations and scalability.</p>
+                <!-- AI & Cloud -->
+                <div class="col-md-4 mb-4" data-reveal>
+                    <div class="glass-card h-100">
+                        <div class="service-icon"><i class="fas fa-brain"></i></div>
+                        <h4>AI & Cloud Solutions</h4>
+                        <p class="text-muted mb-3">Intelligent automation and optimized cloud infrastructure to propel business growth.</p>
+                        <ul class="list-unstyled text-muted small">
+                            <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> LLM Integration</li>
+                            <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> AWS & Google Cloud</li>
+                            <li><i class="fas fa-check text-success mr-2"></i> CI/CD Pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="why-us position-relative">
+        <div class="container text-center" data-reveal>
+            <h2 class="mb-5">Why Work With Us?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="glass-card h-100 text-center">
+                        <h1 class="text-primary mb-3 font-weight-bold">100%</h1>
+                        <h5>Quality Driven</h5>
+                        <p class="text-muted small">We never compromise on the quality and performance of our code.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="glass-card h-100 text-center">
+                        <h1 class="text-secondary mb-3 font-weight-bold">24/7</h1>
+                        <h5>Global Availability</h5>
+                        <p class="text-muted small">Cloud-native setups ensuring zero downtime for your applications.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="glass-card h-100 text-center">
+                        <h1 class="text-accent mb-3 font-weight-bold">∞</h1>
+                        <h5>Infinite Scalability</h5>
+                        <p class="text-muted small">Architectures designed to grow seamlessly alongside your business operations.</p>
                     </div>
                 </div>
             </div>
@@ -90,17 +215,26 @@
     </section>
 
     <!-- Product Section -->
-    <section id="product" class="product py-5 bg-light">
+    <section id="product" class="product product-showcase">
         <div class="container">
-            <h2 class="text-center mb-5">Our Product</h2>
+            <h2 data-reveal>Featured Innovation</h2>
             <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="images/noor-e-istikhara.png" alt="Noor-e-Istikhara App - Premium Islamic Istikhara Mobile Application" class="img-fluid">
+                <div class="col-md-6 mb-5 mb-md-0" data-reveal>
+                    <div class="product-img-container">
+                        <img src="images/noor-e-istikhara.png" alt="Noor-e-Istikhara App Mockup" class="img-fluid">
+                    </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 pl-md-5" data-reveal>
+                    <div class="badge badge-primary mb-3 p-2">New Release</div>
                     <h3>Noor-e-Istikhara</h3>
-                    <p>Noor-e-Istikhara is a comprehensive Islamic Istikhara application built with React Native. It helps users seek divine guidance through the Quran with detailed interpretations, history tracking, and a beautiful multilingual interface.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <p class="text-muted mb-4">Noor-e-Istikhara is a state-of-the-art Islamic Istikhara application.
+                        We've combined traditional wisdom with modern technology to help users seek divine guidance
+                        through the Quran with precise interpretations and a seamless multilingual interface.</p>
+                    <ul class="list-unstyled mb-4 text-muted">
+                        <li><i class="fas fa-check text-success mr-2"></i> Multilingual Support</li>
+                        <li><i class="fas fa-check text-success mr-2"></i> Quranic Insight Integration</li>
+                        <li><i class="fas fa-check text-success mr-2"></i> Beautiful Dark-Green Aesthetics</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -108,36 +242,86 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="_replyto" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-            <div class="row">
-                <div class="col-md-6 mx-auto text-center">
-                    <p><i class="fas fa-envelope fa-2x mb-3"></i></p>
-                    <p>Email us at <a href="mailto:info@moez.tech">info@moez.tech</a></p>
+        <div class="container" data-reveal>
+            <div class="glass-card max-width-600 mx-auto">
+                <h2>Get in Touch</h2>
+                <p class="text-muted mb-5">Have a project in mind? Let's build something exceptional together.</p>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group text-left">
+                        <input type="text" class="form-control" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group text-left">
+                        <input type="email" class="form-control" name="_replyto" placeholder="Email" required>
+                    </div>
+                    <div class="form-group text-left">
+                        <textarea class="form-control" name="message" placeholder="Project Description" rows="5"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-premium btn-primary-tech w-100">Send Message</button>
+                </form>
+                <div class="mt-5">
+                    <p>Or email us at <a href="mailto:info@moez.tech" class="text-primary">info@moez.tech</a></p>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-light py-3">
-        <div class="container text-center">
-            <p>&copy; 2024 MoeZ Tech Company. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="row mb-5 text-left">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <a class="brand-logo d-inline-block" style="margin-bottom: 2rem;" href="#">Mo<span class="logo-pipe"></span>eZ</a>
+                    <p class="text-muted small pr-md-4">Innovating the future with state-of-the-art mobile and web applications, powered by Artificial Intelligence and Cloud architectures.</p>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4" style="font-weight: 600;">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#about" class="text-muted text-decoration-none hover-primary">About Us</a></li>
+                        <li class="mb-3"><a href="#services" class="text-muted text-decoration-none hover-primary">Services</a></li>
+                        <li class="mb-3"><a href="#contact" class="text-muted text-decoration-none hover-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4" style="font-weight: 600;">Products</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#product" class="text-muted text-decoration-none hover-primary">Noor-e-Istikhara</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-white mb-4" style="font-weight: 600;">Connect</h5>
+                    <p class="text-muted small mb-3"><i class="fas fa-map-marker-alt mr-2"></i> Berlin, Germany</p>
+                    <p class="text-muted small"><i class="fas fa-envelope mr-2"></i> info@moez.tech</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-muted mr-3 hover-primary"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-muted mr-3 hover-primary"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="https://github.com/moeztech" class="text-muted hover-primary" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center border-top pt-4" style="border-color: var(--glass-border) !important;">
+                <p class="small text-muted mb-0">&copy; 2026 Moez Tech Company. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS and dependencies -->
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    <!-- Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Reveal on Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+    </script>
 </body>
+
 </html>
